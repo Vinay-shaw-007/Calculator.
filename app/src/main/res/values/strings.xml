@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="First_Input">Enter 1st Number.</string>
+    <string name="Second_Input">Enter 2nd Number</string>
+    <string name="result">Result</string>
+    <string name="Total_Result">Sum</string>
+</resources>

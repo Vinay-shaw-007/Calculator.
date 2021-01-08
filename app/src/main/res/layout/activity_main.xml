@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etn1"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="76dp"
+        android:hint="@string/First_Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etn2"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/Second_Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etn1" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etn2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="146dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="116dp"
+        android:onClick="Button"
+        android:padding="10dp"
+        android:text="@string/Total_Result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+</androidx.constraintlayout.widget.ConstraintLayout>
