@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_cal"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/warmesty"
+        android:gravity="center"
+        android:text="Calculator"
+        android:textColor="@color/pressed_state"
+        android:textSize="45dp" />
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="8dp"
+        android:hint="0"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="8dp"
+        android:layout_above="@+id/tv_info"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:hint=""
+        android:textSize="50dp" />
+
+</LinearLayout>

@@ -4,4 +4,5 @@
     <string name="Second_Input">Enter 2nd Number</string>
     <string name="result">Result</string>
     <string name="Total_Result">Sum</string>
+    <string name="Button9">9</string>
 </resources>

@@ -1,53 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
 
-    <EditText
-        android:id="@+id/etn1"
-        android:layout_width="245dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="76dp"
-        android:hint="@string/First_Input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        layout="@layout/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/etn2"
-        android:layout_width="245dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="60dp"
-        android:hint="@string/Second_Input"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etn1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
 
-    <TextView
-        android:id="@+id/results"
-        android:layout_width="240dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="72dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-        android:text="@string/result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etn2" />
+        <include
+            layout="@layout/grid_button_design"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="146dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="116dp"
-        android:onClick="Button"
-        android:padding="10dp"
-        android:text="@string/Total_Result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/results" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
